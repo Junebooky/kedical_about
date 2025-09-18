@@ -1,0 +1,86 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Typography styles based on the original website */
+  .typo-head1 {
+    @apply font-pretendard font-bold text-[50px] leading-[150%] tracking-[-1.5%];
+  }
+  
+  .typo-head2 {
+    @apply font-pretendard font-bold text-[40px] leading-[150%] tracking-[-1.5%];
+  }
+  
+  .typo-head3 {
+    @apply font-pretendard font-bold text-[32px] leading-[150%] tracking-[-1.5%];
+  }
+  
+  .typo-head4 {
+    @apply font-pretendard font-bold text-[24px] leading-[150%] tracking-[-1.5%];
+  }
+  
+  .typo-head5 {
+    @apply font-pretendard font-bold text-[20px] leading-[150%] tracking-[-1.5%];
+  }
+  
+  .typo-head-lg {
+    @apply font-pretendard font-bold text-[28px] leading-[150%] tracking-[-1.5%];
+  }
+  
+  .typo-body1 {
+    @apply font-pretendard font-normal text-[18px] leading-[150%] tracking-[-1.5%];
+  }
+  
+  .typo-body2 {
+    @apply font-pretendard font-normal text-[16px] leading-[150%] tracking-[-1.5%];
+  }
+  
+  .typo-body3 {
+    @apply font-pretendard font-normal text-[14px] leading-[150%] tracking-[-1.5%];
+  }
+  
+  .typo-body4 {
+    @apply font-pretendard font-normal text-[12px] leading-[150%] tracking-[-1.5%];
+  }
+  
+  .typo-body-lg {
+    @apply font-pretendard font-normal text-[10px] leading-[150%] tracking-[-1.5%];
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
